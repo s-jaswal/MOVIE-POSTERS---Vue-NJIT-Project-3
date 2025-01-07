@@ -35,11 +35,18 @@ body {
 }
 
 .thumbnail img {
+    width: 300px;
+    /* Set a consistent width */
+    height: 450px;
+    /* Set a consistent height */
+    object-fit: cover;
+    /* Ensures the image fits within the defined dimensions */
     margin-top: 10px;
     margin-bottom: 30px;
     padding: 5px;
     border: 2px dashed black;
 }
+
 
 /* This stylizes your "Poster X of Y" text */
 .imageInfo {
