@@ -5,16 +5,17 @@ body {
     padding: 0;
     width: 100%;
     overflow: auto;
-    background-image: url(img/geometry.jpg);
+    background-color: pink
 }
 
 /* This stylizes the header area */
 .header {
     padding: 15px;
 }
+
 .header h1 {
     display: inline-block;
-    color: white;
+    color: black;
 }
 
 /* This stylizes the main page area */
@@ -30,8 +31,9 @@ body {
     padding: 20px;
     margin: 20px;
     border-radius: 0;
-    background-color:#dddddd;
+    background-color: #dddddd;
 }
+
 .thumbnail img {
     margin-top: 10px;
     margin-bottom: 30px;
@@ -41,11 +43,11 @@ body {
 
 /* This stylizes your "Poster X of Y" text */
 .imageInfo {
-	color: #959595;
-	font-style: italic;
-	font-size: x-small;
-	float: right;
-	padding-right: 5px;
+    color: #959595;
+    font-style: italic;
+    font-size: x-small;
+    float: right;
+    padding-right: 5px;
 }
 
 /* This stylizes your Title and Rating Text */
@@ -56,6 +58,7 @@ body {
     font-size: 18px;
     font-weight: 800;
 }
+
 .released,
 .rated {
     color: #5d5d5d;
@@ -65,7 +68,7 @@ body {
 
 /* This shapes your IMDB score area */
 .score {
-    background-color: #39D1B4;
+    background-color: rgb(112, 39, 51);
     color: #fff;
     font-size: 18px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -103,7 +106,7 @@ body {
     margin: 0 -30px 0 40px;
     text-align: center;
     font-weight: 200;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgb(189, 32, 58);
     transition: 500ms;
 }
 
@@ -114,8 +117,8 @@ body {
 }
 
 /* This makes sure your Github Button text is small */
-#github{
-	font-size: small;
+#github {
+    font-size: small;
 }
 
 /* ADD YOUR LIKE AND DISLIKE HOVER/MOUSEOVER CSS CODE HERE */
