@@ -32,17 +32,29 @@ const vue_app = Vue.createApp({
       data() {
             return {
                   // This holds your movies.json data.
-                  movies: []
-                  title: "IMDB: Saanvi's Top 8 Movies",
-                  owner: "Saanvi Jaswal",
-                  github: 'https://github.com/s-jaswal/MOVIE-POSTERS---Vue-NJIT-Project-3'
-
+                  movies: [],
                   /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
-
+                  title: "IMDB + Saanvi's Top 5 Movies",
+                  owner: "Saanvi Jaswal",
+                  github: "https://github.com/J-Groesbeck/NJIT-Movie-Poster-Project"
             }
       },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+            getMonthText(dateArray) {
+                  const months = [
+                        "January", "February", "March", "April", "May", "June",
+                        "July", "August", "September", "October", "November", "December"
+                  ];
+                  const [year, month, day] = dateArray;
+                  const monthText = months[month - 1];
+                  return `${monthText} ${day}, ${year}`;
+            },
+            timeText(minutes) {
+                  const hours = Math.trunc(minutes / 60)
+                  const mins = minutes % 60
+                  return `${hours}h ${mins}m`
+            }
       }
 })
 
